@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f80303, #fcbe1591);
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #f80303, #db632c);
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        h1, h2 {
+            color: #39FF14;
+        }
+
+        .logoofc {
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .contact-info {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(58, 57, 57, 0.9);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .contact-methods {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-methods div {
+            flex-basis: calc(33.33% - 20px);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .email-contact, .phone-contact, .social-media {
+            background-color: #f80303;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .email-contact a, .phone-contact p, .social-media ul {
+            color: white;
+        }
+
+        footer {
+            background-color: #f80303;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Contato - Sua Loja de Produtos Digitais</title>
+</head>
+<body>
+
+    <header>
+        <h1>Entre em Contato Conosco</h1>
+        <img class="logoofc" src="logo.png" alt="logooficial!">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="prod.html">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-info">
+        <h2>Fale Conosco</h2>
+        <p>Estamos sempre prontos para ajudá-lo. Entre em contato através de qualquer um dos nossos canais de comunicação.</p>
+
+        <div class="contact-methods">
+            <div class="email-contact">
+                <h3>Email</h3>
+                <p><a href="mailto:pedrohenriquecferraz2021@gmail.com">pedrohenriquecferraz2021@gmail.com</a></p>
+            </div>
+
+            <div class="phone-contact">
+                <h3>Telefone</h3>
+                <p>(11) 96776-0032</p>
+            </div>
+
+            <div class="social-media">
+                <h3>Redes Sociais</h3>
+                <p>Siga-nos e entre em contato através das nossas redes sociais:</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100003302250643">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/invites/contact/?i=1bfl92pw076ui&utm_content=nrguwih">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Loja de Produtos Digitais. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
