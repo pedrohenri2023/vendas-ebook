@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f80303, #fcbe1591);
+}
+
+header {
+    background: linear-gradient(to bottom,  #f80303,  #db632c );
+    color: #39FF14; /* Cor Neon Verde */
+    text-shadow: 0 0 8px #39FF14;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoofc {
+    height: 100px; /* Ajuste o tamanho conforme necessário */
+}
+
+nav {
+    margin-top: 10px; /* Adiciona espaço abaixo da logo */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.featured-products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    flex-basis: calc(30% - 20px); /* Ajuste para 3 produtos por linha */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto; /* Ajuste para manter a proporção da imagem */
+    transition: transform 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.product-info {
+    cursor: pointer;
+}
+
+.product-details {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(10, 10, 10, 0.9);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: aliceblue;
+}
+
+.product:hover .product-details {
+    display: block;
+}
+
+footer {
+    background-color: #f80303;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .product {
+        flex-basis: calc(50% - 20px); /* Ajuste para 2 produtos por linha em telas menores */
+    }
+
+    header, nav ul li {
+        display: block;
+        text-align: center;
+    }
+}
+
+button {
+    background-color: #f80303;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #db632c;
+}
